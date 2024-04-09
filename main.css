@@ -1,0 +1,155 @@
+/* Untitled Goose Game - DESKTOP Layout
+------------------------*/
+
+/* COLORS
+------------------------
+Dark Blue: #3D6BD5;
+Dark Grey: #A5A5A5;
+Light Grey: #E9E9E9;
+Red: #E20013;
+------------------------*/
+
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+
+/* Nintendo Top Navigation
+------------------------------------------ */
+header {
+
+}
+
+header nav ul {
+
+}
+
+
+header nav a {
+
+}
+
+header nav a:hover {
+
+}
+
+
+
+/* Hero Image
+------------------------------------------ */
+section.hero-image {
+
+}
+
+section.hero-image img {
+
+}
+
+
+
+
+
+/* Game Name & Price
+------------------------------------------ */
+.game {
+
+}
+
+.game h1 {
+
+}
+
+
+.game h2 {
+
+}
+
+
+div.buy {
+
+}
+
+div.buy li {
+
+}
+
+div.buy a {
+
+}
+
+div.buy a:hover {
+
+}
+
+p.price {
+
+}
+
+
+
+/* Screen Shots
+------------------------------------------ */
+section.screen-shots {
+
+}
+
+section.screen-shots img:nth-child() {
+
+}
+
+section.screen-shots img {
+
+}
+
+
+
+
+/* Game Description
+------------------------------------------ */
+main {
+
+}
+
+
+
+section.description {
+
+}
+
+section.description h2 {
+
+}
+
+section.description h3 {
+
+}
+
+section.description li {
+
+}
+
+img.goose-badge {
+
+}
+
+section.play-modes {
+
+}
+
+
+/* Footer
+------------------------------------------ */
+footer {
+
+}
