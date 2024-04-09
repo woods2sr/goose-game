@@ -15,6 +15,10 @@ You've already made responsive sites where the desktop and mobile styles are bot
 
 For this assignment you won't be adding any more styles to `main.css`. Instead, you'll use a completely separate style sheet, `mobile.css`, for all of your mobile styles.
 
+Refer to the assignment description in Canvas for the layout grid and PDF file that lists all of the required styles for this part of the assignment. 
+
+---
+
 **Disadvantages** of multiple-file method:
 * The browser has to download additional files
 * You're starting over from scratch in the mobile stylesheet instead of just modifying what's different
