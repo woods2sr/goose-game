@@ -8,7 +8,7 @@ The first part is a follow-along coding exercise where my video shows you how to
 <br>
 
 ## Part 2
-
+⬇
 For part two you'll do on your own and create a responsive version of the site for mobile devices. 
 
 You've already made responsive sites where the desktop and mobile styles are both in the same stylesheet file. However, this time you'll take a different approach. 
