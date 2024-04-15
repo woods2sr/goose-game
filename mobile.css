@@ -1,18 +1,14 @@
 /* Untitled Goose Game - MOBILE Layout
-------------------------*/
+------------------------
+Note: I've made a bunch of selectors for you in this stylesheet. You won't necessarily use all of them and there might be some new ones that you'll need to add on your own. */
 
 /* COLORS
 ------------------------
-Dark Blue: #3D6BD5;
+Dark Blue: #3D6BD5; 
 Dark Grey: #A5A5A5;
 Light Grey: #E9E9E9;
 Red: #E20013;
 ------------------------*/
-
-
-* {
-   box-sizing: border-box;
-}
 
 body {
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -62,48 +58,66 @@ section.hero-image img {
 
 /* Game Name & Price
 ------------------------------------------ */
-.game {
+/* ⬇ Container for name, price, and buy buttons */
+section.game {
 
 }
 
-.game h1 {
+/* ⬇ Both the h1 and h2 */
+section.game-title {
 
 }
 
-
-.game h2 {
+/* ⬇ Untitled Goose Game */
+section.game-title h1 {
 
 }
 
+/* ⬇ Available Now */
+section.game-title h2 {
 
+}
+
+/* ⬇ Price of the game */
+p.price {
+   
+}
+
+/* ⬇ Container for buy buttons */
 div.buy {
 
 }
 
+/* ⬇ List with buy buttons */
 div.buy li {
 
 }
 
+/* ⬇ Buy Digital & Buy Physical links */
 div.buy a {
 
 }
 
-p.price {
+div.buy a:hover {
 
 }
+
 
 
 
 /* Screen Shots
 ------------------------------------------ */
+/* ⬇ Container area for screen shots */
 section.screen-shots {
 
 }
 
+/* ⬇ Selects an individual image */
 section.screen-shots img:nth-child() {
 
 }
 
+/* ⬇ Affects all screen shot images */
 section.screen-shots img {
 
 }
@@ -111,41 +125,72 @@ section.screen-shots img {
 
 
 
-/* Game Description
+/* Game Information
 ------------------------------------------ */
+/* ⬇ Contains DESCRIPTION, GOOSE-BADGE, and PLAY-MODES */
 main {
 
 }
 
 
 
+/* Description
+------------------------------------------ */
+
+/* ⬇ Container for game description info */
 section.description {
 
 }
 
+/* ⬇ It's a lovely day in the village */
 section.description h2 {
 
 }
 
+/* ⬇ Featuring */
 section.description h3 {
 
 }
 
+/* ⬇ List of features */
 section.description li {
 
 }
 
+
+
+
+/* Goose Badge Image
+------------------------------------------ */
+/* ⬇ Goose in yellow badge */
 img.goose-badge {
 
 }
 
+
+
+
+/* Play Modes
+------------------------------------------ */
+/* ⬇ Container for play modes area */
 section.play-modes {
 
 }
+
+/* ⬇ Play Modes title */
+section.play-modes h2 {
+
+}
+
+/* ⬇ Play mode icon images */
+section.play-modes img {
+
+}
+
 
 
 /* Footer
 ------------------------------------------ */
 footer {
-   
+
 }
