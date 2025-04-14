@@ -1,285 +1,322 @@
-/*	
-	Filename:		  reset.css
-	Description:	Resets default HTML styles across browsers
-                Includes HTML5 patches & Print Styles
+/*
+  UCBA Stylekit Reset CSS
+  Based on Eric Meyer's Reset v2.0 + Modern Enhancements
+  Adjusted for clarity, accessibility, and student learning
 */
 
 
 /* MARGINS, PADDING & FONT SIZE 
-------------------------------------------- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, font, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-
-address,caption,cite,code,dfn,th,var {
-	font-style:normal;
-	font-weight:normal;
-}
-
-body {
-	line-height: 1;
-}
-
-p {
-	margin-bottom: 1em;
-}
-
-
-
-/*  TABLES 
-------------------------------------------- */
-caption,
-th {
-	font-weight: bold;
-	text-align:left;
-}
-
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-
-
-
-/*  FORMS
-------------------------------------------- */
-fieldset {
-	border: 1px solid black;
-	padding: 1em;
-}
-
-legend {
-	font-weight: bold;
-}
-
-
-
-/* BORDERS 
-------------------------------------------- */
-img {
-	border:0;
-}
-
-
-abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor:help;
-}
-
-
-/* MISCELLANEOUS 
-------------------------------------------- */
-
-del {
-	text-decoration: line-through;
-}
-
-blockquote, 
-q {
-	quotes: none;
-}
-
-blockquote:before, 
-blockquote:after,
-q:before,
-q:after {
-	content: " ";
-	content: none;
-}
-
-dfn {
-    font-style: italic;
-}
-
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, serif;
-}
-
-pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-small {
-	font-size: 80%;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-sup {
-  top: -.5em;
-}
-sub {
-  bottom: -.25em;
-}
-
-mark {
-  color: #000;
-  background: #ff0;
-}
-
-
-/* HTML5 PATCHES
-------------------------------------------- */
-/* Corrects 'block' display not defined in IE 8/9 */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/*Corrects `inline-block` display not defined in IE 8/9 */
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    vertical-align: baseline;
-}
-
-/* Prevents modern browsers from displaying `audio` without controls.
-   Remove excess height in iOS 5 devices.  */
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
-
-
-/* Addresses styling for `hidden` attribute not present in IE 8/9 */
-[hidden] {
-    display: none;
-}
-
-/* Corrects overflow displayed oddly in IE 9.  */
-svg:not(:root) {
-    overflow: hidden;
-}
-
-/* Addresses margin not present in IE 8/9 and Safari 5. */
-figure {
-    margin: 0;
-}
-
-
-
-/* PRINT STYLES
-------------------------------------------- */
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-
-@media print {
-  *,
-  *:before,
-  *:after {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: transparent !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  select {
-    background: #fff !important;
-  }
-  .navbar {
-    display: none;
-  }
-  .btn > .caret,
-  .dropup > .btn > .caret {
-    border-top-color: #000 !important;
-  }
-  .label {
-    border: 1px solid #000;
-  }
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important;
-  }
-}
-
-
-
-/* last updated 4/9/15 */
+------------------------------ */
+/* Reset default styles for nearly all HTML elements
+   Ensures a consistent baseline across all browsers */
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%; /* remove browser-default text sizes */
+     font: inherit;     /* inherit font family from body */
+     vertical-align: baseline;
+   }
+   
+   /* Ensure older browsers display HTML5 elements as block */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+     display: block;
+   }
+   
+   /* Improve line height for default body copy */
+   body {
+     font-size: 1rem;
+     line-height: 1.3; /* Adds a little room between lines of text */
+   }
+   
+   /* Add a space below paragraphs */
+   p {
+     margin-bottom: 1em;
+   }
+   
+   /* Hide elements with [hidden] attribute (HTML5 spec) */
+   [hidden] {
+     display: none;
+   }
+   
+   
+   /*  TABLES 
+   ------------------------------------------- */
+   /* Bold captions and headers, left-align text */
+   caption,
+   th {
+     font-weight: bold;
+     text-align: left;
+   }
+   
+   /* Remove spacing between table cells */
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
+   
+   
+   /* FORMS
+   ------------------------------ */
+   /* Ensure visible form grouping and spacing */
+   fieldset {
+     border: 1px solid black;
+     padding: 1em;
+   }
+   
+   /* Bold legend text */
+   legend {
+     font-weight: bold;
+   }
+   
+   /* Inherit font styles for form inputs */
+   button, input, select, textarea {
+     font: inherit;
+   }
+   
+   
+   
+   /* IMAGE STYLES
+   ------------------------------ */
+   /* Remove image borders (common in IE/old HTML) */
+   img {
+     border: 0;
+   }
+   
+   /* Prevents weird spacing in old browsers */
+   a img {
+      border: 0;
+    }
+   
+    /* Utility class to add block-level display to images */
+   .img-block {
+      display: block;
+    }
+    
+   
+   
+   
+   /* MISCELLANEOUS
+   ------------------------------ */
+   /* Show "help cursor" when hovering over abbreviations */
+   abbr[title] {
+      cursor: help;
+    }
+   
+   /* Strike-through for <del> text */
+   del {
+     text-decoration: line-through;
+   }
+   
+   /* Remove default quotation marks */
+   blockquote, q {
+     quotes: none;
+   }
+   
+   /* Clear quote characters manually */
+   blockquote::before, blockquote::after,
+   q::before, q::after {
+     content: '';
+     content: none;
+   }
+   
+   /* Italicize definitions */
+   dfn {
+     font-style: italic;
+   }
+   
+   /* Monospace font for code-related tags */
+   code, kbd, pre, samp {
+     font-family: monospace, serif;
+   }
+   
+   /* Wrap long lines in <pre> tags */
+   pre {
+     white-space: pre-wrap;
+     word-wrap: break-word;
+     overflow-wrap: break-word; /* Break long strings if needed to avoid overflow */
+   }
+   
+   /* Resize small text */
+   small {
+     font-size: 80%;
+   }
+   
+   /* Proper sub/sup positioning */
+   sub, sup {
+     position: relative;
+     font-size: 75%;
+     line-height: 0;
+     vertical-align: baseline;
+   }
+   
+   sup {
+     top: -.5em;
+   }
+   
+   sub {
+     bottom: -.25em;
+   }
+   
+   /* Style highlight marker */
+   mark {
+     color: #000;
+     background: #ff0;
+   }
+   
+   /* Pointer cursor for <summary> elements */
+   details summary {
+     cursor: pointer;
+   }
+   
+   /* Ensure inline layout for elements inside <summary> */
+   details summary > * {
+     display: inline;
+   }
+   
+   /* Remove bottom spacing on last paragraph inside details */
+   details p:last-of-type {
+     margin-bottom: 0;
+   }
+   
+   hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 1em 0;
+    }
+    
+    button {
+      cursor: pointer; /* Makes buttons show a hand cursor like links */
+    }
+   
+   
+   /* MODERN ENHANCEMENTS
+   ------------------------------ */
+   /* Applies box-sizing to all elements and their pseudo-elements */
+   /* Use border-box for all layout calculations */
+   *, *::before, *::after {
+     box-sizing: border-box; 
+   }
+   
+   /* Prevent media from overflowing their containers */
+   img, picture, video, canvas, svg {
+     max-width: 100%; /* Scales down to fit container */
+     height: auto; /* Preserves aspect ratio */
+   }
+   
+   /* Reduce animation for users with motion sensitivity */
+   @media (prefers-reduced-motion: reduce) {
+     * {
+       animation: none !important;
+       transition: none !important;
+     }
+   }
+   
+   
+   
+   /*  PRINT STYLES
+   ------------------------------ */
+      @media print {
+     *, *:before, *:after {
+       color: #000 !important;
+       text-shadow: none !important;
+       background: transparent !important;
+       -webkit-box-shadow: none !important;
+       box-shadow: none !important;
+     }
+   
+     a, a:visited {
+       text-decoration: underline;
+     }
+   
+     a[href]::after {
+       content: " (" attr(href) ")";
+     }
+   
+     abbr[title]::after {
+       content: " (" attr(title) ")";
+     }
+   
+     a[href^="#"]::after,
+     a[href^="javascript:"]::after {
+       content: "";
+     }
+   
+     pre, blockquote {
+       border: 1px solid #999;
+       page-break-inside: avoid;
+     }
+   
+     thead {
+       display: table-header-group;
+     }
+   
+     tr, img {
+       page-break-inside: avoid;
+     }
+   
+     img {
+       max-width: 100% !important;
+     }
+   
+     p, h2, h3 {
+       orphans: 3;
+       widows: 3;
+     }
+   
+     h2, h3 {
+       page-break-after: avoid;
+     }
+   
+     select {
+       background: #fff !important;
+     }
+   
+     nav,
+     .navbar {
+       display: none;
+     }
+   
+     .btn > .caret,
+     .dropup > .btn > .caret {
+       border-top-color: #000 !important;
+     }
+   
+     .label {
+       border: 1px solid #000;
+     }
+   
+     .table {
+       border-collapse: collapse !important;
+     }
+   
+     .table td,
+     .table th {
+       background-color: #fff !important;
+     }
+   
+     .table-bordered th,
+     .table-bordered td {
+       border: 1px solid #ddd !important;
+     }
+   }
+   
+   /*
+     Created by Professor Eric Anderson
+     University of Cincinnati
+     https://github.com/prof-anderson-uc
+     Last updated: April 10, 2025
+   */
