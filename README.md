@@ -1,39 +1,121 @@
-# Untitled Goose Game
+# Untitled Goose Game – Layout Practice
 
-This is a new activity to refresh your memory on some topics we covered in previous weeks and to give you some more practice with skills that you might want to use in your final project. I'm going to start it as a follow-along coding exercise to do the desktop layout and then you'll do a mobile layout as independent assignment on your own. 
+This activity will help you refresh and strengthen layout skills we’ve covered in previous weeks. It also gives you a chance to try a new technique that may come in handy in the future.
 
-## Part 1
-The first part is a follow-along coding exercise where my video shows you how to create the desktop verion of the site. 
-
-<br>
-
-## Part 2
-⬇
-For part two you'll do on your own and create a responsive version of the site for mobile devices. 
-
-You've already made responsive sites where the desktop and mobile styles are both in the same stylesheet file. However, this time you'll take a different approach. 
-
-For this assignment you won't be adding any more styles to `main.css`. Instead, you'll use a completely separate style sheet, `mobile.css`, for all of your mobile styles.
-
-Refer to the assignment description in Canvas for the layout grid and PDF file that lists all of the required styles for this part of the assignment. 
+We’ll start together with a **follow-along desktop layout**, then you’ll complete a **responsive mobile version** on your own using a separate CSS file.
 
 ---
 
-**Disadvantages** of multiple-file method:
-* The browser has to download additional files
-* You're starting over from scratch in the mobile stylesheet instead of just modifying what's different
-* If you make fundamental visual updates to one stylesheet you'll need to remember to change it in the other file, too
+## 🛠️ Getting Started
 
-<br>
+1. Visit the starter repository page on GitHub: https://github.com/prof-anderson-uc/goose-game
 
-**Advantages** of the multiple-file method:
-* Each style sheet will be simpler because it only contains one possible layout 
-* You avoid confusing conflicts between media query style rules and the desktop style rules higher up in the stylesheet
+2. Click the green **"Use this template"** button in the top right
 
-<br>
+3. Select **"Create a new repository"**
 
-## Final Desktop Layout:
+4. Name your repository (example: `goose-layout`)
+
+5. Open **GitHub Desktop**, clone your new repo
+
+6. Open the folder in **Visual Studio Code**
+
+---
+
+## 🖥️ Part 1: Desktop Layout (Follow-Along)
+
+Watch the video and follow along to create the desktop version of the site.
+
+- You’ll use `index.html` and `main.css`
+
+- Layout is based on a CSS Grid structure shown in the PDF
+
+- Use semantic HTML5 elements (`<header>`, `<main>`, `<section>`, etc.)
+
+📄 Need help with the layout? [View the Goose Game Layout PDF](images/goose-game-layout.pdf)
+
+
+---
+
+## 📱 Part 2: Mobile Layout (Your Turn!)
+
+In this part, you’ll create a responsive version of the layout **on your own**.
+
+Instead of adding styles to `main.css`, you’ll write all mobile styles in a **separate file**: `mobile.css`.
+
+This approach mimics a technique sometimes used in real-world CMS theming and legacy projects.
+
+### 🔁 How to connect mobile.css
+
+In your `index.html`, link the file like this:
+
+```html
+<link rel="stylesheet" href="mobile.css" media="(max-width: 768px)">
+```
+
+📄 The mobile grid layout is also shown in the [Goose Game Layout PDF](images/goose-game-layout.pdf)
+
+---
+
+## ⚖️ Pros & Cons of this Two-File Method
+
+**Disadvantages:**
+
+- The browser has to download an **additional file**
+- You're starting over from scratch in the mobile stylesheet instead of just modifying what's different
+- You have to **repeat shared styles** in both files
+- Visual changes often need to be updated **in two places**
+
+**Advantages:**
+
+- Each file is **simpler and easier to read** because it only contains one possible layout
+- You avoid confusing media query conflicts
+- Clear separation of **desktop vs. mobile logic**
+
+---
+
+## 🚀 Publishing Your Live Site with GitHub Pages
+
+Once you've finished your layout:
+
+1. Go to your repository on GitHub.com
+
+2. Click **Settings**
+
+3. Under **Pages**, set the source to `main` branch and select `/ (root)` as the folder
+
+4. Click **Save** and wait for your live site link to appear
+
+5. Copy your GitHub Pages URL
+
+6. Go back to your repository homepage and click the gear icon ✏️ in the **About** section (top-right corner of repo page)
+
+7. Paste your live site URL in the **Website** field and save
+
+---
+
+## 📤 Submitting Your Work
+
+Even though you are publishing your live site, you will **submit the URL of your GitHub repository**, not the live site.
+
+✅ Make sure:
+
+- Your repo includes working HTML and both CSS files
+
+- Your live site is published
+
+- Your live link is added to the repo’s **About section**
+
+- You’ve pushed all your final changes
+
+---
+
+## ✅ Final Layout Examples
+
+### Desktop Layout
+
 ![Desktop](images/_final-desktop.png)
 
-## Final Mobile Layout:
+### Mobile Layout
+
 ![Mobile](images/_final-mobile.jpg)
