@@ -24,11 +24,16 @@ img {
 /* Nintendo Top Navigation
 ------------------------------------------ */
 header {
-
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   padding: 1rem; 
 }
 
 header nav ul {
-
+   list-style-type: none;
+   color: black; 
+   text-decoration: none;
 }
 
 
@@ -60,7 +65,10 @@ section.hero-image img {
 ------------------------------------------ */
 /* ⬇ Container for name, price, and buy buttons */
 section.game {
-
+   text-align: center;
+   font-size: medium; 
+   margin: 2%;
+   padding: 0.5rem; 
 }
 
 /* ⬇ Both the h1 and h2 */
@@ -95,12 +103,33 @@ div.buy li {
 
 /* ⬇ Buy Digital & Buy Physical links */
 div.buy a {
-
+   background-color: #E20013;
+   border: 2px solid #A5A5A5; 
+   padding: 1rem;
+   font-size: 75%; 
+   display: block;
+   border-radius: .5rem; 
+   color: white;
+   text-decoration: none;
+   margin: .5rem; 
+   transition: all 1s ease; 
 }
 
 div.buy a:hover {
 
 }
+
+div.options ul {
+   display: flex; 
+   flex-wrap: wrap;
+   grid-gap: 0.5rem; 
+   justify-content: center;
+   list-style-type: none; 
+
+}
+
+
+
 
 
 
@@ -109,7 +138,8 @@ div.buy a:hover {
 ------------------------------------------ */
 /* ⬇ Container area for screen shots */
 section.screen-shots {
-
+   background-color: blue;
+   padding: 0.5rem; 
 }
 
 /* ⬇ Selects an individual image */
@@ -119,17 +149,20 @@ section.screen-shots img:nth-child() {
 
 /* ⬇ Affects all screen shot images */
 section.screen-shots img {
-
+   border: 2px solid white; 
 }
 
-
+section.screen-shots img:nth-child(3);
 
 
 /* Game Information
 ------------------------------------------ */
 /* ⬇ Contains DESCRIPTION, GOOSE-BADGE, and PLAY-MODES */
 main {
-
+   display: grid; 
+   grid-template-columns: 1fr;
+   justify-content: space-around; 
+   align-items: center; 
 }
 
 
@@ -139,7 +172,12 @@ main {
 
 /* ⬇ Container for game description info */
 section.description {
-
+   grid-row: 2/3;
+   font-size: 1.2rem; 
+   padding: 1.5rem; 
+   line-height: 1.5; 
+   align-items: center; 
+   
 }
 
 /* ⬇ It's a lovely day in the village */
@@ -164,7 +202,8 @@ section.description li {
 ------------------------------------------ */
 /* ⬇ Goose in yellow badge */
 img.goose-badge {
-
+   grid-column: 3/4;
+   align-items: center; 
 }
 
 
@@ -174,17 +213,27 @@ img.goose-badge {
 ------------------------------------------ */
 /* ⬇ Container for play modes area */
 section.play-modes {
-
+   grid-row: 1/2;
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr; 
+   justify-content: space-between; 
+   align-items: center; 
+   grid-gap: 1rem; 
+   padding: 1rem;
+   background-color: lightskyblue;
 }
 
 /* ⬇ Play Modes title */
 section.play-modes h2 {
-
+   grid-column: 1/4; 
+   font-size: 1rem; 
+   text-align: center; 
+   color: white;
 }
 
 /* ⬇ Play mode icon images */
 section.play-modes img {
-
+   
 }
 
 
@@ -192,5 +241,7 @@ section.play-modes img {
 /* Footer
 ------------------------------------------ */
 footer {
-
+   background-color: red; 
+   align-items: center; 
+   color: white; 
 }
